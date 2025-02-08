@@ -5,11 +5,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "annotate_transform"
 version = "0.1.0"
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.11"
 dependencies = [
     "jax>=0.4.33,<0.4.38",
-    "pytest>=8.3.4",
 ]
+
+[project.optional-dependencies]
+build = [
+    "build>=1.2.2.post1",
+    "twine>=6.1.0",
+]
+test = ["pytest>=8.3.4"]
 
 [tool.setuptools]
 packages = ["annotate_transform"]
