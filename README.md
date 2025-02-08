@@ -20,7 +20,7 @@ uv sync
 
 ## Running tests
 ```bash
-uv run tests/test_annotate_transform.py
+uv run --extra test pytest tests/test_annotate_transform.py
 ```
 
 ## Usage 
