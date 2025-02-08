@@ -19,4 +19,4 @@ jobs:
         echo "$HOME/.cargo/bin" >> $GITHUB_PATH
         
     - name: Run tests
-      run: uv run --extra testpytest tests/test_annotate_transform.py 
+      run: uv run --extra test pytest tests/test_annotate_transform.py 
