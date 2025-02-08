@@ -4,11 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "annotate_transform"
-version = "0.1.2"
+description = "A Python library for annotating and validating shape transformations in JAX arrays."
+authors = [{ name = "DrJessop", email = "andrewgrebenisan@gmail.com" }]
+version = "0.1.3"
 requires-python = ">=3.11"
 dependencies = [
     "jax>=0.4.33,<0.4.38",
 ]
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/DrJessop/annotate_transform"
 
 [project.optional-dependencies]
 build = [
